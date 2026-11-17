@@ -1,0 +1,32 @@
+﻿# Virtual Environment
+venv/
+.venv/
+env/
+
+# Node Modules & Build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary Storage & Generated Uploads
+backend/temp_storage/uploads/*
+backend/temp_storage/processed/*
+backend/temp_storage/datasets/*
+!backend/temp_storage/**/.gitkeep
+backend/sample_dataset/
+backend/sample_dataset.zip
+backend/classic_samples/
+backend/classic_dataset.zip
+
+# System & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
