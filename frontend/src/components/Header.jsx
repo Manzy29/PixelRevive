@@ -1,5 +1,5 @@
-﻿import React, { useRef } from 'react';
-import { Sparkles, Upload, FolderUp } from 'lucide-react';
+import React, { useRef } from 'react';
+import { Upload, FolderUp } from 'lucide-react';
 
 export default function Header({ onUploadSingle, onUploadDataset, isLoading }) {
   const singleInputRef = useRef(null);
@@ -20,9 +20,11 @@ export default function Header({ onUploadSingle, onUploadDataset, isLoading }) {
   return (
     <header className="bg-deep-brown text-warm-cream px-6 py-4 shadow-sm flex flex-wrap items-center justify-between border-b border-muted-beige/30">
       <div className="flex items-center space-x-3">
-        <div className="p-2 bg-mandarin rounded-md text-warm-cream">
-          <Sparkles className="w-6 h-6" />
-        </div>
+        <img
+          src="/logo.png"
+          alt="PixelRevive Logo"
+          className="w-10 h-10 object-contain rounded-md"
+        />
         <div>
           <h1 className="text-xl font-bold tracking-wide text-warm-cream">PixelRevive</h1>
           <p className="text-xs text-muted-beige font-medium">
